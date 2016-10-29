@@ -10,5 +10,6 @@
 #define Mammal_hpp
 
 #include <stdio.h>
+//Mammal subClass
 
 #endif /* Mammal_hpp */

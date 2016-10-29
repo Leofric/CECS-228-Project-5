@@ -10,5 +10,6 @@
 #define Bear_hpp
 
 #include <stdio.h>
+//Mammal subclass
 
 #endif /* Bear_hpp */

@@ -10,5 +10,6 @@
 #define Snake_hpp
 
 #include <stdio.h>
+//reptile subclass
 
 #endif /* Snake_hpp */

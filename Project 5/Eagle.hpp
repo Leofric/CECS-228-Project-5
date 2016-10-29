@@ -10,5 +10,6 @@
 #define Eagle_hpp
 
 #include <stdio.h>
+//Bird subclass
 
 #endif /* Eagle_hpp */

@@ -10,5 +10,6 @@
 #define Lizard_hpp
 
 #include <stdio.h>
+//Reptile subclass
 
 #endif /* Lizard_hpp */

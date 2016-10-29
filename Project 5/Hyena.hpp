@@ -10,5 +10,6 @@
 #define Hyena_hpp
 
 #include <stdio.h>
+//mammal subclass
 
 #endif /* Hyena_hpp */

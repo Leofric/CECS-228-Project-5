@@ -10,5 +10,6 @@
 #define Lion_hpp
 
 #include <stdio.h>
+//Lion Subclass
 
 #endif /* Lion_hpp */
