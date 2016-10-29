@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCCA51E91DC444DA00551682 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA51E81DC444DA00551682 /* main.cpp */; };
+		CCCA51F11DC444FB00551682 /* Animal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA51EF1DC444FB00551682 /* Animal.cpp */; };
+		CCCA51F41DC447F300551682 /* Reptile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA51F21DC447F300551682 /* Reptile.cpp */; };
+		CCCA51F71DC4481000551682 /* Bird.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA51F51DC4481000551682 /* Bird.cpp */; };
+		CCCA51FA1DC4489A00551682 /* Mammal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA51F81DC4489A00551682 /* Mammal.cpp */; };
+		CCCA52001DC4491300551682 /* Lizard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA51FE1DC4491300551682 /* Lizard.cpp */; };
+		CCCA52031DC4499D00551682 /* Snake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA52011DC4499D00551682 /* Snake.cpp */; };
+		CCCA52061DC449CC00551682 /* Eagle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA52041DC449CC00551682 /* Eagle.cpp */; };
+		CCCA52091DC449E700551682 /* Chicken.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA52071DC449E700551682 /* Chicken.cpp */; };
+		CCCA520C1DC44A4400551682 /* Bear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA520A1DC44A4400551682 /* Bear.cpp */; };
+		CCCA520F1DC44A6700551682 /* Hyena.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA520D1DC44A6700551682 /* Hyena.cpp */; };
+		CCCA52121DC44A8A00551682 /* Lion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCA52101DC44A8A00551682 /* Lion.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCCA51E31DC444DA00551682 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CCCA51E51DC444DA00551682 /* Project 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Project 5"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCA51E81DC444DA00551682 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CCCA51EF1DC444FB00551682 /* Animal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animal.cpp; sourceTree = "<group>"; };
+		CCCA51F01DC444FB00551682 /* Animal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Animal.hpp; sourceTree = "<group>"; };
+		CCCA51F21DC447F300551682 /* Reptile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Reptile.cpp; sourceTree = "<group>"; };
+		CCCA51F31DC447F300551682 /* Reptile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Reptile.hpp; sourceTree = "<group>"; };
+		CCCA51F51DC4481000551682 /* Bird.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bird.cpp; sourceTree = "<group>"; };
+		CCCA51F61DC4481000551682 /* Bird.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bird.hpp; sourceTree = "<group>"; };
+		CCCA51F81DC4489A00551682 /* Mammal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mammal.cpp; sourceTree = "<group>"; };
+		CCCA51F91DC4489A00551682 /* Mammal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mammal.hpp; sourceTree = "<group>"; };
+		CCCA51FE1DC4491300551682 /* Lizard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lizard.cpp; sourceTree = "<group>"; };
+		CCCA51FF1DC4491300551682 /* Lizard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Lizard.hpp; sourceTree = "<group>"; };
+		CCCA52011DC4499D00551682 /* Snake.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Snake.cpp; sourceTree = "<group>"; };
+		CCCA52021DC4499D00551682 /* Snake.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Snake.hpp; sourceTree = "<group>"; };
+		CCCA52041DC449CC00551682 /* Eagle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Eagle.cpp; sourceTree = "<group>"; };
+		CCCA52051DC449CC00551682 /* Eagle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Eagle.hpp; sourceTree = "<group>"; };
+		CCCA52071DC449E700551682 /* Chicken.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chicken.cpp; sourceTree = "<group>"; };
+		CCCA52081DC449E700551682 /* Chicken.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Chicken.hpp; sourceTree = "<group>"; };
+		CCCA520A1DC44A4400551682 /* Bear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bear.cpp; sourceTree = "<group>"; };
+		CCCA520B1DC44A4400551682 /* Bear.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bear.hpp; sourceTree = "<group>"; };
+		CCCA520D1DC44A6700551682 /* Hyena.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hyena.cpp; sourceTree = "<group>"; };
+		CCCA520E1DC44A6700551682 /* Hyena.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hyena.hpp; sourceTree = "<group>"; };
+		CCCA52101DC44A8A00551682 /* Lion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lion.cpp; sourceTree = "<group>"; };
+		CCCA52111DC44A8A00551682 /* Lion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Lion.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCCA51E21DC444DA00551682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCCA51DC1DC444DA00551682 = {
+			isa = PBXGroup;
+			children = (
+				CCCA51E71DC444DA00551682 /* Project 5 */,
+				CCCA51E61DC444DA00551682 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCCA51E61DC444DA00551682 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCCA51E51DC444DA00551682 /* Project 5 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCCA51E71DC444DA00551682 /* Project 5 */ = {
+			isa = PBXGroup;
+			children = (
+				CCCA51E81DC444DA00551682 /* main.cpp */,
+				CCCA51EF1DC444FB00551682 /* Animal.cpp */,
+				CCCA51F01DC444FB00551682 /* Animal.hpp */,
+				CCCA51F21DC447F300551682 /* Reptile.cpp */,
+				CCCA51F31DC447F300551682 /* Reptile.hpp */,
+				CCCA51F51DC4481000551682 /* Bird.cpp */,
+				CCCA51F61DC4481000551682 /* Bird.hpp */,
+				CCCA51F81DC4489A00551682 /* Mammal.cpp */,
+				CCCA51F91DC4489A00551682 /* Mammal.hpp */,
+				CCCA51FE1DC4491300551682 /* Lizard.cpp */,
+				CCCA51FF1DC4491300551682 /* Lizard.hpp */,
+				CCCA52011DC4499D00551682 /* Snake.cpp */,
+				CCCA52021DC4499D00551682 /* Snake.hpp */,
+				CCCA52041DC449CC00551682 /* Eagle.cpp */,
+				CCCA52051DC449CC00551682 /* Eagle.hpp */,
+				CCCA52071DC449E700551682 /* Chicken.cpp */,
+				CCCA52081DC449E700551682 /* Chicken.hpp */,
+				CCCA520A1DC44A4400551682 /* Bear.cpp */,
+				CCCA520B1DC44A4400551682 /* Bear.hpp */,
+				CCCA520D1DC44A6700551682 /* Hyena.cpp */,
+				CCCA520E1DC44A6700551682 /* Hyena.hpp */,
+				CCCA52101DC44A8A00551682 /* Lion.cpp */,
+				CCCA52111DC44A8A00551682 /* Lion.hpp */,
+			);
+			path = "Project 5";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCCA51E41DC444DA00551682 /* Project 5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCA51EC1DC444DA00551682 /* Build configuration list for PBXNativeTarget "Project 5" */;
+			buildPhases = (
+				CCCA51E11DC444DA00551682 /* Sources */,
+				CCCA51E21DC444DA00551682 /* Frameworks */,
+				CCCA51E31DC444DA00551682 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 5";
+			productName = "Project 5";
+			productReference = CCCA51E51DC444DA00551682 /* Project 5 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCCA51DD1DC444DA00551682 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Alex Berthon";
+				TargetAttributes = {
+					CCCA51E41DC444DA00551682 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CCCA51E01DC444DA00551682 /* Build configuration list for PBXProject "Project 5" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CCCA51DC1DC444DA00551682;
+			productRefGroup = CCCA51E61DC444DA00551682 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCCA51E41DC444DA00551682 /* Project 5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCCA51E11DC444DA00551682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCA52061DC449CC00551682 /* Eagle.cpp in Sources */,
+				CCCA51F41DC447F300551682 /* Reptile.cpp in Sources */,
+				CCCA51E91DC444DA00551682 /* main.cpp in Sources */,
+				CCCA52121DC44A8A00551682 /* Lion.cpp in Sources */,
+				CCCA51F71DC4481000551682 /* Bird.cpp in Sources */,
+				CCCA520F1DC44A6700551682 /* Hyena.cpp in Sources */,
+				CCCA51F11DC444FB00551682 /* Animal.cpp in Sources */,
+				CCCA51FA1DC4489A00551682 /* Mammal.cpp in Sources */,
+				CCCA52091DC449E700551682 /* Chicken.cpp in Sources */,
+				CCCA52001DC4491300551682 /* Lizard.cpp in Sources */,
+				CCCA52031DC4499D00551682 /* Snake.cpp in Sources */,
+				CCCA520C1DC44A4400551682 /* Bear.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CCCA51EA1DC444DA00551682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CCCA51EB1DC444DA00551682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CCCA51ED1DC444DA00551682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCCA51EE1DC444DA00551682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCCA51E01DC444DA00551682 /* Build configuration list for PBXProject "Project 5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCA51EA1DC444DA00551682 /* Debug */,
+				CCCA51EB1DC444DA00551682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCCA51EC1DC444DA00551682 /* Build configuration list for PBXNativeTarget "Project 5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCA51ED1DC444DA00551682 /* Debug */,
+				CCCA51EE1DC444DA00551682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCCA51DD1DC444DA00551682 /* Project object */;
+}
