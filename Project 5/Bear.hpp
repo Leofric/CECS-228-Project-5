@@ -10,6 +10,16 @@
 #define Bear_hpp
 
 #include <stdio.h>
+#include <string>
+#include "Mammal.hpp"
+
 //Mammal subclass
+class Bear: public Mammal{
+public:
+    std::string move();
+    std::string talk();
+private:
+    std::string animalType = "Bear";
+};
 
 #endif /* Bear_hpp */

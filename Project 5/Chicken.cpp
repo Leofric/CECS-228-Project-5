@@ -7,4 +7,10 @@
 //
 
 #include "Chicken.hpp"
-//
+std::string Chicken::move(){
+    return "wander";
+}
+
+std::string Chicken::talk(){
+    return "squwak";
+}

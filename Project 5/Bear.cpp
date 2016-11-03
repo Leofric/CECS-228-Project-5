@@ -7,4 +7,10 @@
 //
 
 #include "Bear.hpp"
-//
+std::string Bear::move(){
+    return "lumber";
+}
+
+std::string Bear::talk(){
+    return "growl";
+}

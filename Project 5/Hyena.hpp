@@ -10,6 +10,17 @@
 #define Hyena_hpp
 
 #include <stdio.h>
+#include <string>
+#include "Mammal.hpp"
+
+
 //mammal subclass
+class Hyena: public Mammal{
+public:
+    std::string move();
+    std::string talk();
+private:
+    std::string animalType = "Hyena";
+};
 
 #endif /* Hyena_hpp */

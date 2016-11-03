@@ -10,6 +10,15 @@
 #define Lizard_hpp
 
 #include <stdio.h>
-//Reptile subclass
+#include <string>
+#include "Reptile.hpp"
 
+//Reptile subclass
+class Lizard: public Reptile{
+public:
+    std::string move();
+    std::string talk();
+private:
+    std::string animalType = "Lizard";
+};
 #endif /* Lizard_hpp */

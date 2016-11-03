@@ -10,6 +10,11 @@
 #define Reptile_hpp
 
 #include <stdio.h>
+#include <string>
+#include "Animal.hpp"
+
 //Reptile subClass
 
+class Reptile: public Animal{
+};
 #endif /* Reptile_hpp */

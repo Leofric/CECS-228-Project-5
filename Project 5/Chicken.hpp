@@ -10,6 +10,16 @@
 #define Chicken_hpp
 
 #include <stdio.h>
+#include <string>
+#include "Bird.hpp"
+
 //Bird subClass
+class Chicken: public Bird{
+public:
+    std::string move();
+    std::string talk();
+private:
+    std::string animalType = "Chicken";
+};
 
 #endif /* Chicken_hpp */

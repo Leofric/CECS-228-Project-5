@@ -7,4 +7,10 @@
 //
 
 #include "Snake.hpp"
-//
+std::string Snake::move(){
+    return "Slither";
+}
+
+std::string Snake::talk(){
+    return "hiss";
+}
