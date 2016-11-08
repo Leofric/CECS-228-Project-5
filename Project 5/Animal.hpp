@@ -18,7 +18,7 @@ public:
     virtual std::string talk() = 0;
     virtual std::string move() = 0;
 private:
-    std::string animalType;
+     std::string animalType;
 };
 
 

@@ -7,10 +7,3 @@
 //
 
 #include "Eagle.hpp"
-std::string Eagle::move(){
-    return "soar";
-}
-
-std::string Eagle::talk(){
-    return "screech";
-}

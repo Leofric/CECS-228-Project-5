@@ -7,10 +7,4 @@
 //
 
 #include "Hyena.hpp"
-std::string Hyena::move(){
-    return "slink";
-}
 
-std::string Hyena::talk(){
-    return "crackle";
-}

@@ -12,14 +12,22 @@
 #include <stdio.h>
 #include <string>
 #include "Bird.hpp"
+#include <iostream>
 
 //Bird subClass
 class Chicken: public Bird{
 public:
-    std::string move();
-    std::string talk();
+    Chicken(){
+        animalType = "Chicken";
+    }
+    std::string move(){
+        return "wander";
+    }
+    std::string talk(){
+        return "squak";
+    }
 private:
-    std::string animalType = "Chicken";
+    std::string animalType;
 };
 
 #endif /* Chicken_hpp */

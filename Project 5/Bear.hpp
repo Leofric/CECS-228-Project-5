@@ -12,14 +12,30 @@
 #include <stdio.h>
 #include <string>
 #include "Mammal.hpp"
+#include <iostream>
 
 //Mammal subclass
 class Bear: public Mammal{
 public:
-    std::string move();
-    std::string talk();
+    Bear(){
+        animalType = "Bear";
+    }
+    
+    std::string move(){
+        return "lumber";
+    }
+    
+    std::string talk(){
+        return "growl";
+    }
+    
+    friend std::ostream& operator<<(std::ostream& os, Bear& bear){
+        os << bear.animalType << ", " <<bear.Bear::move() <<", "<< bear.Bear::talk();
+        return os;
+    }
+
 private:
-    std::string animalType = "Bear";
+    std::string animalType;
 };
 
 #endif /* Bear_hpp */

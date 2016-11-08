@@ -7,10 +7,3 @@
 //
 
 #include "Lion.hpp"
-std::string Lion::move(){
-    return "stride";
-}
-
-std::string Lion::talk(){
-    return "roar";
-}

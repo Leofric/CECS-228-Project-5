@@ -7,9 +7,19 @@
 //
 
 #include <iostream>
+#include "Animal.hpp"
+#include "Bear.hpp"
+#include <string>
 
 int main(int argc, const char * argv[]) {
-    // insert code here..
-    std::cout << "Hello, World!\n";
+   
+    Bear smokey;
+    std::cout<< smokey <<std::endl;
+//    Animal *aptr = new Bear;
+//    std::cout<<aptr;
+//    
+    
+    
+    
     return 0;
 }

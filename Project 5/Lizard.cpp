@@ -7,11 +7,3 @@
 //
 
 #include "Lizard.hpp"
-
-std::string Lizard::move(){
-    return "skitter";
-}
-
-std::string Lizard::talk(){
-    return "squeak";
-}

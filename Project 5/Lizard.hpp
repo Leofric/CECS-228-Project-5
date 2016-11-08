@@ -12,12 +12,20 @@
 #include <stdio.h>
 #include <string>
 #include "Reptile.hpp"
+#include <iostream>
 
 //Reptile subclass
 class Lizard: public Reptile{
 public:
-    std::string move();
-    std::string talk();
+    Lizard(){
+        animalType = "Lizard";
+    }
+    std::string move(){
+        return "skitter";
+    }
+    std::string talk(){
+        return "chirp"; //I actually had to look this up
+    }
 private:
     std::string animalType = "Lizard";
 };

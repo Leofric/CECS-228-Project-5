@@ -12,15 +12,24 @@
 #include <stdio.h>
 #include <string>
 #include "Mammal.hpp"
+#include <iostream>
+
 
 
 //Lion Subclass
 class Lion: public Mammal{
 public:
-    std::string move();
-    std::string talk();
+    Lion(){
+        animalType = "Lion";
+    }
+    std::string move(){
+        return "stride";
+    }
+    std::string talk(){
+        return "roar";
+    }
 private:
-    std::string animalType = "Lion";
+    std::string animalType;
 };
 
 #endif /* Lion_hpp */
