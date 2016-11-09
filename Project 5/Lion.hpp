@@ -19,8 +19,7 @@
 //Lion Subclass
 class Lion: public Mammal{
 public:
-    Lion(){
-        animalType = "Lion";
+    Lion():Mammal(new std::string("Lion")){
     }
     std::string move(){
         return "stride";
@@ -28,17 +27,7 @@ public:
     std::string talk(){
         return "roar";
     }
-    
-    std::string getAnimalType(){
-        return animalType;
-    }
-    
-    friend std::ostream& operator<<(std::ostream& os, Lion& lion){
-        os << lion.animalType << ", " <<lion.Lion::move() <<", "<< lion.Lion::talk();
-        return os;
-    }
-protected:
-    std::string animalType;
+
 };
 
 #endif /* Lion_hpp */

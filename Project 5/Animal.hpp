@@ -15,7 +15,7 @@
 
 class Animal{
 public:
-    ~Animal(){
+    virtual ~Animal(){
         delete animalType;
         animalCount--;
     }
@@ -28,11 +28,14 @@ public:
         return animalCount;
     }
     
-
+    friend std::ostream& operator<<(std::ostream& os, Animal& animal);
     
 protected:
+    Animal(std::string *fub){
+        animalType = fub;
+    }
     static int animalCount;
-    std::string *animalType = new std::string;
+    std::string *animalType;
 };
 
 

@@ -14,7 +14,11 @@
 #include "Animal.hpp"
 
 //Reptile subClass
-
 class Reptile: public Animal{
+    
+protected:
+    Reptile(std::string *fub):Animal(fub){
+    }
+    
 };
 #endif /* Reptile_hpp */

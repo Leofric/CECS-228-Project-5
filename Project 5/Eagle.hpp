@@ -17,9 +17,9 @@
 //Bird subclass
 class Eagle: public Bird{
 public:
-    Eagle(){
-        animalType = "Eagle";
+    Eagle():Bird(new std::string("Eagle")){
     }
+    
     std::string move(){
         return "soar";
     }
@@ -27,17 +27,6 @@ public:
         return "screech";
     }
     
-    std::string getAnimalType(){
-        return animalType;
-    }
-    
-    friend std::ostream& operator<<(std::ostream& os, Eagle& eagle){
-        os << eagle.animalType << ", " <<eagle.Eagle::move() <<", "<< eagle.Eagle::talk();
-        return os;
-    }
-    
-protected:
-    std::string animalType;
 };
 
 #endif /* Eagle_hpp */

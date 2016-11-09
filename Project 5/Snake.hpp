@@ -18,27 +18,15 @@
 //reptile subclass
 class Snake: public Reptile{
 public:
-    Snake(){
-        animalType = "Snake";
+    Snake():Reptile(new std::string("Snake")){
     }
+    
     std::string move(){
         return "slither";
     }
     std::string talk(){
         return "hiss";
     }
-    
-    std::string getAnimalType(){
-        return animalType;
-    }
-    
-    friend std::ostream& operator<<(std::ostream& os, Snake& snake){
-        os << snake.animalType << ", " <<snake.Snake::move() <<", "<< snake.Snake::talk();
-        return os;
-    }
-    
-protected:
-    std::string animalType;
 };
 
 #endif /* Snake_hpp */

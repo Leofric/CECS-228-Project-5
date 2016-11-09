@@ -16,6 +16,11 @@
 
 //Mammal subClass
 class Mammal: public Animal{
+    
+protected:
+    Mammal(std::string *fub):Animal(fub){
+    }
+    
 };
 
 #endif /* Mammal_hpp */

@@ -18,27 +18,16 @@
 //mammal subclass
 class Hyena: public Mammal{
 public:
-    Hyena(){
-        animalType = "Hyena";
+    Hyena():Mammal(new std::string("Hyena")){
     }
+    
     std::string move(){
         return "slink";
     }
     std::string talk(){
         return "crackle";
     }
-    
-    std::string getAnimalType(){
-        return animalType;
-    }
-    
-    friend std::ostream& operator<<(std::ostream& os, Hyena& hyena){
-        os << hyena.animalType << ", " <<hyena.Hyena::move() <<", "<< hyena.Hyena::talk();
-        return os;
-    }
-    
-protected:
-    std::string animalType;
+
 };
 
 #endif /* Hyena_hpp */

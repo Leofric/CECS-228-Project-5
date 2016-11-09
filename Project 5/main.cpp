@@ -83,7 +83,7 @@ void printMenu(Animal*cages[]){
 }
 
 void addAnimal(Animal*cages[]){
-    std::cout<<"Please enter the cage number ";
+    std::cout<<"Please enter the cage number \n";
     int cageNumber;
     std::cin >> cageNumber;
     if(cages[cageNumber] == nullptr){
