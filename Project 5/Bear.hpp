@@ -17,6 +17,8 @@
 //Mammal subclass
 class Bear: public Mammal{
 public:
+    //Constructor, calls mammal constructor
+    //@param new std::string the type of animal
     Bear():Mammal(new std::string("Bear")){
     }
     
@@ -27,7 +29,6 @@ public:
     std::string talk(){
         return "growl";
     }
-    
 };
 
 #endif /* Bear_hpp */

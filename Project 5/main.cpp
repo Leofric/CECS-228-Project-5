@@ -4,14 +4,6 @@
 //
 //  Created by Alex Berthon on 10/28/16.
 //  Copyright © 2016 Alex Berthon. All rights reserved.
-//
-
-
-//PROBLEM 1 - data not deleted? static count doesnt decrease after i remove the animal
-//PROBLEM 2 - cant figure out how to print a pointer such that cout<<*ptr prints name,walk,growl
-
-
-
 
 #include <iostream>
 #include "Animal.hpp"
@@ -22,7 +14,6 @@
 #include "Bear.hpp"
 #include "Hyena.hpp"
 #include "Lion.hpp"
-
 #include <string>
 
 void printMenu(Animal*[]);
@@ -36,7 +27,7 @@ int main(int argc, const char * argv[]) {
     int choice;
     bool run;
     Animal *cages[10] = {NULL};
-    
+    displayAll(cages);
     while(run){
     printMenu(cages);
     std::cin >> choice;
@@ -58,21 +49,10 @@ int main(int argc, const char * argv[]) {
             break;
         }
     }
-    
     return 0;
 }
 
 void printMenu(Animal*cages[]){
-    std::cout<<"----Zoo Cages----"<<std::endl;
-    std::string animalType;
-    for(int i = 0; i<10; i++){
-        if(cages[i] == nullptr){
-            animalType = "Empty";
-        }
-        else animalType = cages[i]->getAnimalType();
-        
-        std::cout<<i+1<<" ["<<animalType<<"]"<<std::endl;
-    }
     
     std::cout<<"----Menu----"<<std::endl;
     std::cout<<"    1) Add"<<std::endl;
@@ -83,7 +63,7 @@ void printMenu(Animal*cages[]){
 }
 
 void addAnimal(Animal*cages[]){
-    std::cout<<"Please enter the cage number \n";
+    std::cout<<"Please enter the cage number ";
     int cageNumber;
     std::cin >> cageNumber;
     if(cages[cageNumber] == nullptr){
@@ -132,6 +112,7 @@ void removeAnimal(Animal*cages[]){
     int cageNumber;
     std::cin >> cageNumber;
     if(cages[cageNumber] != nullptr){
+        delete cages[cageNumber];
         cages[cageNumber] = nullptr;
         std::cout<<"Animal removed from cage #"<<cageNumber<<"\n"<<std::endl;
     }
@@ -139,8 +120,18 @@ void removeAnimal(Animal*cages[]){
 }
 
 void displayAll(Animal*cages[]){
+    std::cout<<"----Zoo Cages----"<<std::endl;
     for(int i = 0; i<10; i++){
-        std::cout<<cages[i]<<std::endl;
+        if(cages[i] == nullptr){
+            std::printf("%-2d %-1s", i+1, "[");
+            std::cout<<"Empty";
+            std::printf("%-1s", "]\n");
+        }
+        else{ //std::cout<<i+1<<" ["<<cages[i]<<"]"<<std::endl;
+        std::printf("%-2d %-1s", i+1, "[");
+        std::cout<<*(cages[i]);
+        std::printf("%-1s", "]\n");
+        }
     }
     std::cout<<std::endl;
 }
@@ -148,19 +139,4 @@ void displayAll(Animal*cages[]){
 void animalCount(){
     std::cout<<"There are currently "<<Animal::getAnimalCount()<<" Animals in the zoo\n"<<std::endl;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

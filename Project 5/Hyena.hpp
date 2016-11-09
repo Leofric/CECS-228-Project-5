@@ -14,10 +14,11 @@
 #include "Mammal.hpp"
 #include <iostream>
 
-
 //mammal subclass
 class Hyena: public Mammal{
 public:
+    //Constructor, calls mammal constructor
+    //@param new std::string the type of animal
     Hyena():Mammal(new std::string("Hyena")){
     }
     
@@ -27,7 +28,6 @@ public:
     std::string talk(){
         return "crackle";
     }
-
 };
 
 #endif /* Hyena_hpp */

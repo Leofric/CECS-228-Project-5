@@ -17,8 +17,9 @@
 class Reptile: public Animal{
     
 protected:
-    Reptile(std::string *fub):Animal(fub){
+    //Constructor, calls base constructor
+    //@param *type the type of the animal, type std::string
+    Reptile(std::string *type):Animal(type){
     }
-    
 };
 #endif /* Reptile_hpp */

@@ -12,6 +12,6 @@
 int Animal::animalCount = 0;
 
 std::ostream& operator<<(std::ostream& os, Animal& animal){
-    os << animal.getAnimalType()<< ", " << animal.move() << ", " << animal.talk();
+    os << *(animal.animalType)<< ", " << animal.move() << ", " << animal.talk();
     return os;
 }

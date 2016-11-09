@@ -17,9 +17,10 @@
 class Bird: public Animal{
     
 protected:
-    Bird(std::string *fub):Animal(fub){
+    //Constructor, calls base constructor
+    //@param *type the type of the animal, type std::string
+    Bird(std::string *type):Animal(type){
     }
-    
 };
 
 #endif /* Bird_hpp */

@@ -17,9 +17,11 @@
 //Reptile subclass
 class Lizard: public Reptile{
 public:
+    //Constructor, calls reptile constructor
+    //@param new std::string the type of animal
     Lizard():Reptile(new std::string("Lizard")){
     }
-        
+    
     std::string move(){
         return "skitter";
     }

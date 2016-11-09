@@ -13,14 +13,14 @@
 #include <string>
 #include "Animal.hpp"
 
-
 //Mammal subClass
 class Mammal: public Animal{
     
 protected:
+    //Constructor, calls base constructor
+    //@param *type the type of the animal, type std::string
     Mammal(std::string *fub):Animal(fub){
     }
-    
 };
 
 #endif /* Mammal_hpp */

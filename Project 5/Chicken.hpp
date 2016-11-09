@@ -17,6 +17,8 @@
 //Bird subClass
 class Chicken: public Bird{
 public:
+    //Constructor, calls bird constructor
+    //@param new std::string the type of animal
     Chicken():Bird(new std::string("Chicken")){
     }
     

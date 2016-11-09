@@ -14,10 +14,11 @@
 #include "Reptile.hpp"
 #include <iostream>
 
-
-//reptile subclass
+//Reptile subclass
 class Snake: public Reptile{
 public:
+    //Constructor, calls reptile constructor
+    //@param *type the type of the animal, type std::string
     Snake():Reptile(new std::string("Snake")){
     }
     
