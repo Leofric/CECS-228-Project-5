@@ -18,15 +18,23 @@
 class Lizard: public Reptile{
 public:
     Lizard(){
-        animalType = "Lizard";
+        *animalType = "Lizard";
+        animalCount++;
     }
+    
+    ~Lizard();
+    
     std::string move(){
         return "skitter";
     }
     std::string talk(){
         return "chirp"; //I actually had to look this up
     }
-private:
-    std::string animalType = "Lizard";
+    
+    friend std::ostream& operator<<(std::ostream& os, Lizard& lizard){
+        os << lizard.animalType << ", " <<lizard.Lizard::move() <<", "<< lizard.Lizard::talk();
+        return os;
+    }
+
 };
 #endif /* Lizard_hpp */

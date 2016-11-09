@@ -27,7 +27,17 @@ public:
     std::string talk(){
         return "crackle";
     }
-private:
+    
+    std::string getAnimalType(){
+        return animalType;
+    }
+    
+    friend std::ostream& operator<<(std::ostream& os, Hyena& hyena){
+        os << hyena.animalType << ", " <<hyena.Hyena::move() <<", "<< hyena.Hyena::talk();
+        return os;
+    }
+    
+protected:
     std::string animalType;
 };
 

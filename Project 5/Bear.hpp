@@ -29,12 +29,16 @@ public:
         return "growl";
     }
     
+    std::string getAnimalType(){
+        return animalType;
+    }
+    
     friend std::ostream& operator<<(std::ostream& os, Bear& bear){
         os << bear.animalType << ", " <<bear.Bear::move() <<", "<< bear.Bear::talk();
         return os;
     }
-
-private:
+    
+protected:
     std::string animalType;
 };
 

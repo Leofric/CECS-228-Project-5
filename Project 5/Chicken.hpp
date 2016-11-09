@@ -26,7 +26,17 @@ public:
     std::string talk(){
         return "squak";
     }
-private:
+    
+    std::string getAnimalType(){
+        return animalType;
+    }
+    
+    friend std::ostream& operator<<(std::ostream& os, Chicken& chicken){
+        os << chicken.animalType << ", " <<chicken.Chicken::move() <<", "<< chicken.Chicken::talk();
+        return os;
+    }
+    
+protected:
     std::string animalType;
 };
 

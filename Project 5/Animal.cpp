@@ -7,3 +7,4 @@
 //
 
 #include "Animal.hpp"
+int Animal::animalCount = 0;

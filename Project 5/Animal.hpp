@@ -15,10 +15,24 @@
 
 class Animal{
 public:
+    ~Animal(){
+        delete animalType;
+        animalCount--;
+    }
     virtual std::string talk() = 0;
     virtual std::string move() = 0;
-private:
-     std::string animalType;
+    virtual std::string getAnimalType(){
+        return *animalType;
+    }
+    static int getAnimalCount(){
+        return animalCount;
+    }
+    
+
+    
+protected:
+    static int animalCount;
+    std::string *animalType = new std::string;
 };
 
 
