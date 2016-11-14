@@ -22,12 +22,10 @@ void removeAnimal(Animal*[]);
 void displayAll(Animal*[]);
 void animalCount();
 
-
 int main(int argc, const char * argv[]) {
     int choice;
     bool run;
     Animal *cages[10] = {NULL};
-    displayAll(cages);
     while(run){
     printMenu(cages);
     std::cin >> choice;
@@ -53,6 +51,18 @@ int main(int argc, const char * argv[]) {
 }
 
 void printMenu(Animal*cages[]){
+    std::cout<<"----Zoo Cages----"<<std::endl;
+    for(int i = 0; i<10; i++){
+        if(cages[i] == nullptr){
+            std::cout<<i+1<<"  [Empty]"<<std::endl;
+        }
+        else{
+            std::printf("%-2d %-1s", i+1, "[");
+            std::cout<<cages[i]->getAnimalType();
+            std::printf("%-1s", "]\n");
+        }
+    }
+    std::cout<<std::endl;
     
     std::cout<<"----Menu----"<<std::endl;
     std::cout<<"    1) Add"<<std::endl;
@@ -63,9 +73,10 @@ void printMenu(Animal*cages[]){
 }
 
 void addAnimal(Animal*cages[]){
-    std::cout<<"Please enter the cage number ";
+    std::cout<<"Please enter the cage number, 1-10 ";
     int cageNumber;
     std::cin >> cageNumber;
+    cageNumber--;
     if(cages[cageNumber] == nullptr){
         std::cout<<"Please enter the animal to store"<<std::endl;
         std::cout<<"Press 1 for Lizard"<<std::endl;
@@ -102,7 +113,7 @@ void addAnimal(Animal*cages[]){
                 cages[cageNumber] = new Lion;
                 break;
         }
-        std::cout<<"Stored the animal in cage #"<<cageNumber<<"\n"<<std::endl;
+        std::cout<<"Stored the animal in cage #"<<cageNumber+1<<"\n"<<std::endl;//here
     }
     else std::cout<<"That cage is already occuped\n"<<std::endl;
 }
@@ -111,10 +122,12 @@ void removeAnimal(Animal*cages[]){
     std::cout<<"Please enter the cage number ";
     int cageNumber;
     std::cin >> cageNumber;
+    cageNumber--;
+
     if(cages[cageNumber] != nullptr){
         delete cages[cageNumber];
         cages[cageNumber] = nullptr;
-        std::cout<<"Animal removed from cage #"<<cageNumber<<"\n"<<std::endl;
+        std::cout<<"Animal removed from cage #"<<cageNumber+1<<"\n"<<std::endl;
     }
     else std::cout<<"That cage is already empty\n"<<std::endl;
 }
@@ -127,7 +140,7 @@ void displayAll(Animal*cages[]){
             std::cout<<"Empty";
             std::printf("%-1s", "]\n");
         }
-        else{ //std::cout<<i+1<<" ["<<cages[i]<<"]"<<std::endl;
+        else{
         std::printf("%-2d %-1s", i+1, "[");
         std::cout<<*(cages[i]);
         std::printf("%-1s", "]\n");
